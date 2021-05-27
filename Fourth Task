@@ -1,0 +1,15 @@
+#Program to get positive numbers from list
+
+n=int(input("Enter the number of elements in the list:"))
+listNum=[]
+newlist=[]
+for i in range(0,n):
+    number=int(input())
+    listNum.append(number)
+
+for x in listNum:
+    if(x>0):
+        newlist.append(x)
+
+print(newlist)
+
