@@ -1,0 +1,8 @@
+#Accept a file and print the extension
+print("Input the filename:")
+filename=input()
+extension=filename.split(".")[-1]
+d={"py":"python","jpg":"Joint Photographic Experts Group","cs":"C sharp","cpp":"C++"}
+for key,value in d.items():
+    if(key==extension):
+        print(f"The extension of the file is: {value}")
