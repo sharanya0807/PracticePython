@@ -1,0 +1,15 @@
+#Fibonacci series
+print("Enter the positive range to print fibonacci series")
+n=int(input())
+fibonacci=[0,1]
+count=0
+if n==0|n==1:
+    print(f"Fibonacci series:{0}")
+
+else:
+    for num in range(2,n):
+        ele = fibonacci[num-1]+fibonacci[num-2]
+        fibonacci.append(ele)
+    
+    print(f"Fibonacci series:{fibonacci}")
+
