@@ -1,0 +1,18 @@
+#Print the frequencies of the letters of the string
+
+def most_frequent(input_string):
+    dictionary1={}
+    for i in input_string:
+        if i in dictionary1:
+            dictionary1[i]+=1
+        
+        else:
+            dictionary1[i]=1
+
+    sort_dic = sorted(dictionary1.items(),key = lambda x:x[1],reverse=True)
+    return sort_dic
+
+print("Input the string:")
+inputstring=input()
+dict1=most_frequent(inputstring)
+print(dict1)
